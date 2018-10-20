@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mover {
+  width: 150px;
+  height: 150px;
+  background: lightblue;
+
+  transform: translate(50px, 100px);
+}
+
+.rotar {
+  width: 150px;
+  height: 150px;
+  background: pink;
+
+  transform: rotate(45deg) translate(20px, 40px);
+}
+
+.escalar {
+  width: 150px;
+  height: 150px;
+  background: lightgreen;
+  transform: scale(0.5);
+  transition: all 0.5s;
+}
+
+.escalar:hover {
+  transform: scale(1.4) rotate(35deg);
+  background: peru;
+}
+
+.animaciones {
+  margin-top: 200px 0px;
+}
+
+@@keyframes hola {
+  from {
+    background: green;
+  }
+
+  to {
+    background: red:
+  }
+}
+
+.animaciones .hola {
+  width: 200px;
+  height: 200px;
+  background: red;
+  animation-name: hola;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+}
+
+
+@keyframes coderhouse {
+  0% {
+    transform: rotate(0deg) translate(0,0);
+    background: purple ;
+}
+
+  25% {
+    transform: rotate(30deg) translate(100px, -50px);
+    background: yellow;
+  }
+
+  50% {
+    transform: rotate(-20deg) translate(250px, 150px);
+    background: red;
+  }
+
+  100% {
+    transform: rotate(0deg) translate(0,0);
+    background: purple;
+  }
+}
+.animaciones .animar {
+  width: 100px;
+  height: 100px;
+  background: purple;
+
+  animation-name: coderhouse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+}

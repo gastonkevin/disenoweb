@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  background: tomato;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  font-family: 'arial', 'helvetica', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+header nav ul li a {
+  color: #fff;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+}
+
+header nav .menu .submenu {
+  background: tomato;
+  padding: 10px;
+  position: absolute;
+  left:0;
+  width: 250%;
+  display: none;
+}
+
+header nav .menu .submenu li {
+  display: block;
+}
+
+header nav .menu li:hover .submenu{
+  display: block;
+}
